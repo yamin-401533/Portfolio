@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashabul Yamin - Portfolio</title>
+    <link rel="stylesheet" href="a.css">
+</head>
+<body style="background-image: url(3.jpg); background-size: cover;">
+    <div class="container">
+        <header>
+            <h1>Ashabul Yamin Tuhin</h1>
+            <p class="border">Competitive Programmer| FrontEnd Developer | Graphic Designer</p>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#activities">Activities</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div id="about" class="glass-box border">
+            <h2>About Me</h2>
+            <div style="margin-top: 5px;"><img src="image/yamin.jpg" height="180px" width="150px" padding="10px 5px 10px 5px" align="right">
+                <p>Hi, this Yamin ,a second-year Computer Science and Engineering student with a passion for competitive programming. 
+My technical skills include C++, Java, with hands-on experience. I'm particularly enthusiastic about quantum computing and its potential to revolutionize the tech industry.
+As a dedicated learner and problem-solver, I constantly seek opportunities to apply my knowledge to innovative projects. I excel in team environments and possess strong communication skills.
+Actively seeking internships and entry-level positions to further my experience in software development, AI, and quantum computing. Connect with me to discuss potential collaborations or to explore my projects on GitHub and GitLab.</p>
+        </div>
+            </div>
+            
+
+        <div id="education" class="glass-box border">
+            <h2>Education</h2>
+            <h3>Bachelor's, Computer Science & Engineering</h3>
+            <p>INTERNATIONAL ISLAMIC UNIVERSITY CHITTAGONG</p>
+            <p>JUNE 2023 - Present</p>
+
+            <h3>HSC</h3>
+            <p>CHATTOGRAM CANTONMENT PUBLIC COLLEGE</p>
+            <p>JULY 2020 - JANUARY 2023</p>
+        </div>
+
+        <div id="skills" class="glass-box border">
+            <h2>Skills</h2>
+            <ul>
+                <li>C, C++</li>
+                <li>Java Programming</li>
+                <li>Quantum Computing</li>
+                <li>Software Development (Java)</li>
+            </ul>
+        </div>
+
+        <div id="projects" class="glass-box border">          
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Java Project</h3>
+                <p><ul><li><button class="glass-box border" style="color: rgb(255, 114, 58);text-decoration:none;font-size: 1.4rem;"><a href="https://github.com/yamin-401533/Java-Project.git">Chat Application</a></button></li></ul></p>
+                <p><ul><li><button class="glass-box border" style="color: rgb(255, 114, 58);text-decoration:none;font-size: 1.4rem;"><a href="https://github.com/yamin-401533/Java-Project.git">CGPA Calculator</a></button></li></ul></p>
+            </div>
+            <div class="project">
+                <h3>C++ Project</h3>
+                <p><ul><li><button class="glass-box border" style="color: rgb(255, 114, 58);text-decoration:none;font-size: 1.4rem;"><a href="https://github.com/yamin-401533/Bus_Management_System.git">Bus Management System</a></button></li></ul></p>
+            </div>
+            <div class="project">
+                <h3>Front End Development Project</h3>
+                <p><ul><li><button class="glass-box border" style="color: rgb(255, 114, 58);text-decoration:none;font-size: 1.4rem;"><a href="https://github.com/yamin-401533">Amazon Clone Project</a></button></li></ul></p>
+            </div>
+            <div class="project">
+                <h3>C Project</h3>
+                <p><ul><li><button class="glass-box border" style="color: rgb(255, 114, 58);text-decoration:none;font-size: 1.4rem;"><a href="https://github.com/yamin-401533/C_Programming_Project.git">Calculator Project</a></button></li></ul></p>
+            </div>
+            <div class="pimg border">
+                
+            </div>
+        </div>
+
+        <div id="activities" class="glass-box border">
+            <h2>Activities</h2>
+            <ul>
+                <li>Microsoft learn student ambassador @microsoft</li>
+                <li>Campus Ambassador at ProPeers</li>
+                <li>Campus Ambassador at IshQool</li>
+            </ul>
+        </div>
+
+        <div id="contact" class="glass-box border">
+            <h2>Contact Me</h2>
+            <p>Email: ashabulyamintuhin@gmail.com</p>
+            <p>Phone: 01970915225</p>
+            <p>Location: Chittagong, Bangladesh</p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="social-links" class="glass-box border">
+            <a href="https://www.linkedin.com/in/yamin401533" target="_blank" class="social border">LinkedIn</a>
+            <a href="https://github.com/yamin401533" target="_blank" class="social border">GitHub</a>
+            <a href="https://gitlab.com/yamin401533" target="_blank" class="social border">GitLab</a>
+            <a href="https://codeforces.com/profile/yamin401533" target="_blank" class="social border">Codeforces</a>
+        </div>
+        <p>&copy; 2024 Ashabul Yamin. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const navLinks = document.querySelectorAll('nav a');
+            
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href').substring(1);
+                    const targetElement = document.getElementById(targetId);
+                    targetElement.scrollIntoView({ behavior: 'smooth' });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
